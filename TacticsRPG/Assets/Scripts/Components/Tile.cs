@@ -15,6 +15,15 @@ public class Tile : MonoBehaviour
     //Lets place other objects in the center of the top of the tile
     public Vector3 center { get { return new Vector3(pos.x, height * stepHeight, pos.y); } }
 
+    //Tile can hold something (char, traps, trees, etc)
+    public GameObject content;
+
+    //Variables for the pathfinding
+    //prev - stores the tile which was traversed to reach it
+    [HideInInspector] public Tile prev;
+    //distance - store number of tiles which have been crossed to reach this point
+    [HideInInspector] public int distance;
+
     //When the height is modified, then the tiles are visually updated
     void Match()
     {
