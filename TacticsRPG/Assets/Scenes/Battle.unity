@@ -94,8 +94,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d1f57ccea96fb643a710d284426673b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 2
   follow: {fileID: 341159176}
 --- !u!4 &239005381
 Transform:
@@ -488,7 +488,7 @@ MonoBehaviour:
   pos:
     x: 0
     y: 0
-  heroPrefab: {fileID: 4859465754425135558, guid: 294d7ae81ad26d249a46dc5ea8e0ac26,
+  heroPrefab: {fileID: 3584480144187469374, guid: fbb9b9c749a882d46951ea8064c82ee8,
     type: 3}
   currentUnit: {fileID: 0}
 --- !u!4 &1854838978
