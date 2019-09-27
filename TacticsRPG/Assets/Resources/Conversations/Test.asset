@@ -15,10 +15,10 @@ MonoBehaviour:
   list:
   - messages:
     - Uh...? Is there someone?
-    speaker: {fileID: 21300000, guid: 71dc088023dda56489c2073e13149f81, type: 3}
+    speaker: {fileID: 21300000, guid: d3455c9b43983c345b21c16e9d46ab44, type: 3}
     anchor: 0
   - messages:
     - Yes!
     - It is me, DIO!
-    speaker: {fileID: 21300000, guid: d413ff3599a62214c9237d5338f7054b, type: 3}
+    speaker: {fileID: 21300000, guid: 21a968ff176901a42985ce439327f836, type: 3}
     anchor: 8
