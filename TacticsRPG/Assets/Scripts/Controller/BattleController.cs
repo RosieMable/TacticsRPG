@@ -11,11 +11,18 @@ public class BattleController : StateMachine
     public Point pos;
 
     public GameObject heroPrefab;
-    public Unit currentUnit;
     public Tile currentTile { get { return board.GetTile(pos); } }
-
+    public Unit currentUnit;
     private void Start()
     {
         ChangeState<InitBattleState>();
     }
+
+    #region Turn
+    //Instance of Turn, list of all Unity in battle and AbilityMenuPanelController
+    public AbilityMenuPanelController abilityMenuPanelController;
+    public Turn turn = new Turn();
+    public List<Unit> units = new List<Unit>();
+
+    #endregion
 }
