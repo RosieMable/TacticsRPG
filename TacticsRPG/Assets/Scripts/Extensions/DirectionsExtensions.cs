@@ -25,4 +25,17 @@ public static class DirectionsExtensions
     {
         return new Vector3(0, (int)d * 90, 0);
     }
+    
+    // Convert direction to world space vector
+    public static Vector3 ToVector(this Directions d)
+    {
+        switch (d)
+        {
+            case Directions.North: return Vector3.forward;
+            case Directions.East: return Vector3.right;
+            case Directions.South: return Vector3.back;
+            case Directions.West: return Vector3.left;
+            default: return Vector3.forward;
+        }
+    }
 }

@@ -23,9 +23,17 @@ public class Board : MonoBehaviour
 
     public void Load(LevelData data)
     {
+        // Create or find the LevelData parent GameObject
+        GameObject levelDataParent = GameObject.Find("LevelData");
+        if (levelDataParent == null)
+        {
+            levelDataParent = new GameObject("LevelData");
+        }
+        
         for (int i = 0; i < data.tiles.Count; i++)
         {
             GameObject instance = Instantiate(tilePrefab) as GameObject;
+            instance.transform.SetParent(levelDataParent.transform); // Parent to LevelData GameObject
             Tile t = instance.GetComponent<Tile>();
             t.Load(data.tiles[i]);
             tiles.Add(t.pos, t);

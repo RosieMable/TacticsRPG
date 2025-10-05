@@ -5,15 +5,21 @@ using UnityEngine;
 //Template class for the movement, the concret ones will inheret from this one
 public abstract class Movement : MonoBehaviour
 {
-    public int range;
-    public int jumpHeight;
+    public int range { get { return stats != null ? stats.GetStatValue(StatType.MOV) : 4; } }
+    public int jumpHeight { get { return stats != null ? stats.GetStatValue(StatType.JMP) : 1; } }
     protected Unit unit;
     protected Transform jumper;
+    protected Stats stats;
 
     protected virtual void Awake()
     {
         unit = GetComponent<Unit>();
         jumper = transform.Find("Jumper");
+    }
+
+    protected virtual void Start()
+    {
+        stats = GetComponent<Stats>();
     }
 
     //public method which can determine what tiles are reachable on a given board

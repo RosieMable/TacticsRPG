@@ -6,6 +6,7 @@ public class Unit : MonoBehaviour
 {
     public Tile tile { get; protected set; }
     public Directions dir;
+    public Allegiance allegiance = Allegiance.Hero;
 
     public void Place(Tile target)
     {

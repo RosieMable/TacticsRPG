@@ -9,7 +9,8 @@ using UnityEngine;
 //Attacking not undoable
 
 //This is a data container, updating the turn data will be handled through game states
-public class Turn : MonoBehaviour
+[System.Serializable]
+public class Turn
 {
     public Unit actor;
     public bool hasUnitMoved;
