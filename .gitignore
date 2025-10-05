@@ -70,3 +70,24 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# VSCode settings
+.vscode/
+
+# JetBrains Rider
+.idea/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Unity specific temporary files
+/[Pp]ackages/packages-lock.json
+
+# Timeline
+/[Aa]ssets/[Tt]imeline[Cc]lip[Gg]uidToPathMap.cache
